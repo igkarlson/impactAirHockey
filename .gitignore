@@ -22,7 +22,7 @@ expo-env.d.ts
 .metro-health-check*
 
 # debug
-npm-debug.*
+npm-debug.*/
 yarn-debug.*
 yarn-error.*
 
@@ -37,3 +37,4 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+.idea/
