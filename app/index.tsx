@@ -58,7 +58,21 @@ export default function GameplayScreen() {
         <View style={styles.unionOverlay} />
 
         <View style={styles.logoContainer}>
-          <View style={styles.logoBackground} />
+          <View style={styles.logoPlate}>
+            <View style={styles.plateBase} />
+            <LinearGradient
+              colors={['rgba(255,255,255,0.35)', 'rgba(255,255,255,0)']}
+              start={{ x: 0.5, y: 0 }}
+              end={{ x: 0.5, y: 1 }}
+              style={styles.plateHighlight}
+            />
+            <LinearGradient
+              colors={['rgba(0,0,0,0.2)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0.2)']}
+              start={{ x: 0, y: 0.5 }}
+              end={{ x: 1, y: 0.5 }}
+              style={styles.plateEdge}
+            />
+          </View>
           <View style={styles.logoContent}>
             <View style={styles.impactAirContainer}>
               <ThemedText style={styles.impactAirText}>Impact Air</ThemedText>
@@ -150,13 +164,41 @@ const styles = StyleSheet.create({
     width: 294 * scaleX,
     height: 108.84 * scaleY,
   },
-  logoBackground: {
+  logoPlate: {
     position: 'absolute',
     bottom: 0,
     width: 294 * scaleX,
     height: 25.82 * scaleY,
+    borderRadius: (25.82 * scaleY) / 2,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 20, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  plateBase: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     backgroundColor: '#000000',
-    opacity: 0.1,
+    opacity: 0.12,
+  },
+  plateHighlight: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '65%',
+  },
+  plateEdge: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
   logoContent: {
     position: 'absolute',
@@ -170,11 +212,16 @@ const styles = StyleSheet.create({
     height: 36.04 * scaleY,
   },
   impactAirText: {
-    fontSize: 32 * Math.min(scaleX, scaleY),
-    fontWeight: 'bold',
-    color: '#F33535',
+    fontSize: 40 * Math.min(scaleX, scaleY),
+    fontWeight: '900',
+    color: '#FFFFFF',
     textAlign: 'center',
-    lineHeight: 36 * scaleY,
+    lineHeight: 44 * scaleY,
+    textTransform: 'uppercase',
+    letterSpacing: 2 * scaleX,
+    textShadowColor: '#F33535',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 10,
   },
   hockeyContainer: {
     marginTop: 12.13 * scaleY,
@@ -182,11 +229,16 @@ const styles = StyleSheet.create({
     height: 45.73 * scaleY,
   },
   hockeyText: {
-    fontSize: 36 * Math.min(scaleX, scaleY),
-    fontWeight: 'bold',
-    color: '#F33535',
+    fontSize: 48 * Math.min(scaleX, scaleY),
+    fontWeight: '900',
+    color: '#FFFFFF',
     textAlign: 'center',
-    lineHeight: 46 * scaleY,
+    lineHeight: 54 * scaleY,
+    textTransform: 'uppercase',
+    letterSpacing: 3 * scaleX,
+    textShadowColor: '#F33535',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 12,
   },
   buttonContainer: {
     position: 'absolute',
