@@ -3,12 +3,17 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
+    "android-development": "DEBUG=expo:* npx expo run:android --variant debug",
+    "android-production": "DEBUG=expo:* npx expo run:android --variant release",
+    "android": "expo run:android",
+    "format": "prettier . --log-level debug --write",
+    "ios-development": "DEBUG=expo:* npx expo run:ios --configuration Debug",
+    "ios-production": "DEBUG=expo:* npx expo run:ios --configuration Release",
+    "ios": "expo run:ios",
+    "lint": "DEBUG=expo:* npx expo lint --fix",
+    "prebuild": "DEBUG=expo:* npx expo prebuild --platform ios",
+    "start": "DEBUG=expo:* npx expo start",
+    "update": "npx npm-check-updates -u --verbose"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
@@ -41,7 +46,10 @@
     "react-native-screens": "~4.11.1",
     "react-native-svg": "^15.12.1",
     "react-native-web": "~0.20.0",
-    "react-native-webview": "13.13.5"
+    "react-native-webview": "13.13.5",
+    "expo-device": "~7.1.4",
+    "expo-network": "~7.1.5",
+    "expo-localization": "~16.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

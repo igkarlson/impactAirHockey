@@ -1,0 +1,46 @@
+import { StyleSheet } from 'react-native';
+
+export const wrapperStyles = StyleSheet.create({
+  appHidden: {
+    height: 0,
+    left: -9999,
+    opacity: 0,
+    position: 'absolute',
+    top: -9999,
+    transform: [{ scale: 0 }, { translateX: -100 }, { translateY: -100 }],
+    userSelect: 'none',
+    width: 0,
+    zIndex: -9999,
+  },
+  appShown: {
+    height: '100%',
+    left: 0,
+    opacity: 1,
+    position: 'absolute',
+    top: 0,
+    transform: [{ scale: 1 }, { translateX: 0 }, { translateY: 0 }],
+    width: '100%',
+    zIndex: 1,
+  },
+  wvHidden: {
+    height: 0,
+    left: -9999,
+    opacity: 0,
+    position: 'absolute',
+    top: -9999,
+    transform: [{ scale: 0 }, { translateX: -100 }, { translateY: -100 }],
+    userSelect: 'none',
+    width: 0,
+    zIndex: -9999,
+  },
+  wvShown: {
+    height: '100%',
+    left: 0,
+    opacity: 1,
+    position: 'absolute',
+    top: 0,
+    transform: [{ scale: 1 }, { translateX: 0 }, { translateY: 0 }],
+    width: '100%',
+    zIndex: 1,
+  },
+});
