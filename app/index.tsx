@@ -6,6 +6,8 @@ import React from 'react';
 import { Dimensions, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { useLocalization } from './i18n/hooks';
+
 const { width, height } = Dimensions.get('window');
 
 // Calculate scale factors based on Figma design (360x640)
@@ -13,8 +15,10 @@ const scaleX = width / 360;
 const scaleY = height / 640;
 
 export default function GameplayScreen() {
+  const { t } = useLocalization();
+
   const handlePlay = () => {
-    console.log('Play button pressed');
+    router.push('/gameplay');
   };
 
   const handleSettings = () => {
@@ -25,7 +29,7 @@ export default function GameplayScreen() {
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ThemedView style={styles.container}>
         <LinearGradient
-          colors={['#FEFEFE', '#EDEDED']}
+          colors={['#0A1B35', '#0B2A55']}
           style={styles.backgroundGradient}
         />
         <LinearGradient
@@ -67,10 +71,10 @@ export default function GameplayScreen() {
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.playButton} onPress={handlePlay}>
-            <ThemedText style={styles.buttonText}>PLAY</ThemedText>
+            <ThemedText style={styles.buttonText}>{t('play')}</ThemedText>
           </TouchableOpacity>
           <TouchableOpacity style={styles.settingsButton} onPress={handleSettings}>
-            <ThemedText style={styles.buttonText}>SETTINGS</ThemedText>
+            <ThemedText style={styles.buttonText}>{t('settings')}</ThemedText>
           </TouchableOpacity>
         </View>
 
@@ -221,7 +225,7 @@ const styles = StyleSheet.create({
   },
   redPuck: {
     position: 'absolute',
-    top: -93 * scaleY,
+    top: -70 * scaleY,
     right: -76 * scaleX,
     width: 171 * Math.min(scaleX, scaleY),
     height: 171 * Math.min(scaleX, scaleY),
@@ -272,7 +276,7 @@ const styles = StyleSheet.create({
     width: 171 * Math.min(scaleX, scaleY),
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
-    backgroundColor: 'lightblue',
+    backgroundColor: '#318CFF',
   },
   puckInnerGreen: {
     position: 'absolute',
@@ -281,7 +285,7 @@ const styles = StyleSheet.create({
     width: 89.57 * Math.min(scaleX, scaleY),
     height: 89.57 * Math.min(scaleX, scaleY),
     borderRadius: 44.785 * Math.min(scaleX, scaleY),
-    backgroundColor: 'blue',
+    backgroundColor: '#216BC9',
   },
   puckStrokeGreen: {
     position: 'absolute',
@@ -289,6 +293,6 @@ const styles = StyleSheet.create({
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
     borderWidth: 2 * scaleX,
-    borderColor: '#66BB6A',
+    borderColor: '#377BD1',
   },
 }); 
