@@ -43,18 +43,18 @@ const styles = StyleSheet.create({
   languageButton: {
     paddingHorizontal: 12,
     paddingVertical: 6,
-    backgroundColor: '#318CFF',
+    backgroundColor: '#14faab',
     borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center',
   },
   languageButtonActive: {
-    backgroundColor: '#F94444',
+    backgroundColor: '#0b191e',
   },
   languageButtonText: {
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: '#0b191e',
     textAlign: 'center',
   },
 }); 

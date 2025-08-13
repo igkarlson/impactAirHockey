@@ -29,11 +29,11 @@ export default function GameplayScreen() {
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ThemedView style={styles.container}>
         <LinearGradient
-          colors={['#0A1B35', '#0B2A55']}
+          colors={['#0b191e', '#0f2a35']}
           style={styles.backgroundGradient}
         />
         <LinearGradient
-          colors={['#6BB3E1', '#12649A']}
+          colors={['#14faab', '#0b191e']}
           style={styles.overlayGradient}
         />
         
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
     lineHeight: 44 * scaleY,
     textTransform: 'uppercase',
     letterSpacing: 2 * scaleX,
-    textShadowColor: '#F33535',
+    textShadowColor: '#14faab',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 10,
   },
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
     lineHeight: 54 * scaleY,
     textTransform: 'uppercase',
     letterSpacing: 3 * scaleX,
-    textShadowColor: '#F33535',
+    textShadowColor: '#14faab',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 12,
   },
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
   playButton: {
     width: 213 * scaleX,
     height: 46 * scaleY,
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
     borderRadius: 2 * scaleX,
     justifyContent: 'center',
     alignItems: 'center',
@@ -258,13 +258,13 @@ const styles = StyleSheet.create({
   settingsButton: {
     width: 213 * scaleX,
     height: 45 * scaleY,
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
     borderRadius: 2 * scaleX,
     justifyContent: 'center',
     alignItems: 'center',
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: '#0b191e',
     fontSize: 14 * Math.min(scaleX, scaleY),
     fontWeight: 'bold',
     textTransform: 'uppercase',
@@ -292,7 +292,7 @@ const styles = StyleSheet.create({
     width: 171 * Math.min(scaleX, scaleY),
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
-    backgroundColor: '#FF3131',
+    backgroundColor: '#14faab',
   },
   puckInnerRed: {
     position: 'absolute',
@@ -301,7 +301,7 @@ const styles = StyleSheet.create({
     width: 89.57 * Math.min(scaleX, scaleY),
     height: 89.57 * Math.min(scaleX, scaleY),
     borderRadius: 44.785 * Math.min(scaleX, scaleY),
-    backgroundColor: '#C92121',
+    backgroundColor: '#0b191e',
   },
   puckStrokeRed: {
     position: 'absolute',
@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
     borderWidth: 2 * scaleX,
-    borderColor: '#D13737',
+    borderColor: '#14faab',
   },
   greenPuck: {
     position: 'absolute',
@@ -328,7 +328,7 @@ const styles = StyleSheet.create({
     width: 171 * Math.min(scaleX, scaleY),
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
-    backgroundColor: '#318CFF',
+    backgroundColor: '#0b191e',
   },
   puckInnerGreen: {
     position: 'absolute',
@@ -337,7 +337,7 @@ const styles = StyleSheet.create({
     width: 89.57 * Math.min(scaleX, scaleY),
     height: 89.57 * Math.min(scaleX, scaleY),
     borderRadius: 44.785 * Math.min(scaleX, scaleY),
-    backgroundColor: '#216BC9',
+    backgroundColor: '#14faab',
   },
   puckStrokeGreen: {
     position: 'absolute',
@@ -345,6 +345,6 @@ const styles = StyleSheet.create({
     height: 171 * Math.min(scaleX, scaleY),
     borderRadius: 85.5 * Math.min(scaleX, scaleY),
     borderWidth: 2 * scaleX,
-    borderColor: '#377BD1',
+    borderColor: '#0b191e',
   },
 }); 

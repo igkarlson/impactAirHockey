@@ -39,11 +39,11 @@ export default function SettingsScreen() {
     <SafeAreaView style={styles.safeArea} edges={[]}>
       <ThemedView style={styles.container}>
         <LinearGradient
-          colors={['#0A1B35', '#0B2A55']}
+          colors={['#0b191e', '#0f2a35']}
           style={styles.backgroundGradient}
         />
         <LinearGradient
-          colors={['#6BB3E1', '#12649A']}
+          colors={['#14faab', '#0b191e']}
           style={styles.overlayGradient}
         />
         
@@ -102,7 +102,7 @@ export default function SettingsScreen() {
                   <Switch
                     value={soundEnabled}
                     onValueChange={setSoundEnabled}
-                    trackColor={{ false: '#F94444', true: 'red' }}
+                    trackColor={{ false: '#0b191e', true: '#14faab' }}
                     thumbColor={soundEnabled ? '#FFFFFF' : '#FFFFFF'}
                     style={styles.toggle}
                   />
@@ -117,7 +117,7 @@ export default function SettingsScreen() {
                   <Switch
                     value={vibrationEnabled}
                     onValueChange={setVibrationEnabled}
-                    trackColor={{ false: '#F94444', true: 'red' }}
+                    trackColor={{ false: '#0b191e', true: '#14faab' }}
                     thumbColor={vibrationEnabled ? '#FFFFFF' : '#FFFFFF'}
                     style={styles.toggle}
                   />
@@ -150,87 +150,69 @@ export default function SettingsScreen() {
             </View>
           </View>
         ) : (
-          <View style={styles.gameplayContainer}>
-            <View style={styles.goalSection}>
-              <ThemedText style={styles.sectionTitle}>{t('goal')}</ThemedText>
-              <View style={styles.buttonRow}>
+          <View style={styles.settingsContainer}>
+            <View style={styles.settingItem}>
+              <ThemedText style={styles.settingLabel} numberOfLines={1}>{t('goal')}</ThemedText>
+              <View style={styles.languageButtonsContainer}>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    (goalTarget === 3) && styles.gameplayButtonActive
+                    styles.languageButton,
+                    (goalTarget === 3) && styles.languageButtonActive
                   ]}
                   onPress={() => { setGoalTarget(3); setGoalValue('3'); }}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    goalValue === '3' && styles.gameplayButtonTextActive
-                  ]}>3</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>3</ThemedText>
                 </TouchableOpacity>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    (goalTarget === 10) && styles.gameplayButtonActive
+                    styles.languageButton,
+                    (goalTarget === 10) && styles.languageButtonActive
                   ]}
                   onPress={() => { setGoalTarget(10); setGoalValue('10'); }}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    goalValue === '10' && styles.gameplayButtonTextActive
-                  ]}>10</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>10</ThemedText>
                 </TouchableOpacity>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    (goalTarget === 15) && styles.gameplayButtonActive
+                    styles.languageButton,
+                    (goalTarget === 15) && styles.languageButtonActive
                   ]}
                   onPress={() => { setGoalTarget(15); setGoalValue('15'); }}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    goalValue === '15' && styles.gameplayButtonTextActive
-                  ]}>15</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>15</ThemedText>
                 </TouchableOpacity>
               </View>
             </View>
 
-            <View style={styles.timingSection}>
-              <ThemedText style={styles.sectionTitle}>{t('timing')}</ThemedText>
-              <View style={styles.buttonRow}>
+            <View style={styles.settingItem}>
+              <ThemedText style={styles.settingLabel}>{t('timing')}</ThemedText>
+              <View style={styles.languageButtonsContainer}>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    timingValue === '1' && styles.gameplayButtonActive
+                    styles.languageButton,
+                    timingValue === '1' && styles.languageButtonActive
                   ]}
                   onPress={() => setTimingValue('1')}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    timingValue === '1' && styles.gameplayButtonTextActive
-                  ]}>1</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>1</ThemedText>
                 </TouchableOpacity>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    timingValue === '3' && styles.gameplayButtonActive
+                    styles.languageButton,
+                    timingValue === '3' && styles.languageButtonActive
                   ]}
                   onPress={() => setTimingValue('3')}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    timingValue === '3' && styles.gameplayButtonTextActive
-                  ]}>3</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>3</ThemedText>
                 </TouchableOpacity>
                 <TouchableOpacity 
                   style={[
-                    styles.gameplayButton,
-                    timingValue === '5' && styles.gameplayButtonActive
+                    styles.languageButton,
+                    timingValue === '5' && styles.languageButtonActive
                   ]}
                   onPress={() => setTimingValue('5')}
                 >
-                  <ThemedText style={[
-                    styles.gameplayButtonText,
-                    timingValue === '5' && styles.gameplayButtonTextActive
-                  ]}>5</ThemedText>
+                  <ThemedText style={styles.languageButtonText}>5</ThemedText>
                 </TouchableOpacity>
               </View>
             </View>
@@ -302,7 +284,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 46 * scaleX,
     height: 46 * scaleY,
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
     borderRadius: 2 * scaleX,
   },
   backArrow: {
@@ -334,8 +316,8 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   displayButtonActive: {
-    backgroundColor: '#318CFF',
-    borderColor: '#318CFF',
+    backgroundColor: '#14faab',
+    borderColor: '#14faab',
   },
   displayButtonText: {
     fontSize: 12 * Math.min(scaleX, scaleY),
@@ -387,13 +369,13 @@ const styles = StyleSheet.create({
   languageButton: {
     width: 54 * scaleX,
     height: 29 * scaleY,
-    backgroundColor: '#318CFF',
+    backgroundColor: '#14faab',
     borderRadius: 3 * scaleX,
     justifyContent: 'center',
     alignItems: 'center',
   },
   languageButtonActive: {
-    backgroundColor: '#F94444',
+    backgroundColor: '#0b191e',
   },
   languageButtonText: {
     fontSize: 14 * Math.min(scaleX, scaleY),
@@ -415,7 +397,7 @@ const styles = StyleSheet.create({
     left: 14 * scaleX,
     right: 14 * scaleX,
     height: 519 * scaleY,
-    backgroundColor: '#0F407E',
+    backgroundColor: '#0b191e',
     borderRadius: 8 * scaleX,
   },
   goalSection: {
@@ -449,7 +431,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   gameplayButtonActive: {
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
   },
   gameplayButtonText: {
     fontSize: 20 * Math.min(scaleX, scaleY),
@@ -458,7 +440,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   gameplayButtonTextActive: {
-    color: '#FFFFFF',
+    color: '#0b191e',
   },
   timingSection: {
     position: 'absolute',

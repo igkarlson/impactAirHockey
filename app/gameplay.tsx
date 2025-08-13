@@ -508,11 +508,11 @@ export default function GameplayScreen() {
       <SafeAreaView style={styles.safeArea} edges={[]}>
         <ThemedView style={styles.container}>
           <LinearGradient
-            colors={['#0A1B35', '#0B2A55']}
+            colors={['#0b191e', '#0f2a35']}
             style={styles.backgroundGradient}
           />
           <LinearGradient
-            colors={['#6BB3E1', '#12649A']}
+            colors={['#14faab', '#0b191e']}
             style={styles.overlayGradient}
           />
         
@@ -735,7 +735,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 46 * scaleX,
     height: 46 * scaleY,
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
     borderRadius: 2 * scaleX,
   },
   pauseButton: {
@@ -751,7 +751,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 46 * scaleX,
     height: 46 * scaleY,
-    backgroundColor: '#4692F0',
+    backgroundColor: '#0b191e',
     borderRadius: 2 * scaleX,
   },
   gameBoard: {
@@ -767,7 +767,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: '2%',
-    backgroundColor: '#F33535',
+    backgroundColor: '#14faab',
     borderRadius: 41 * scaleX,
   },
   borderContainer: {
@@ -794,7 +794,7 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     borderWidth: 1 * scaleX,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
     borderRadius: 35 * scaleX,
     opacity: 0.2,
   },
@@ -805,8 +805,8 @@ const styles = StyleSheet.create({
     right: '10%',
     bottom: '100%',
     borderWidth: 10,
-    borderColor: '#2375DC',
-    backgroundColor: '#2375DC',
+    borderColor: '#0b191e',
+    backgroundColor: '#0b191e',
   },
   rectangle10: {
     position: 'absolute',
@@ -815,7 +815,7 @@ const styles = StyleSheet.create({
     right: '10%',
     bottom: 0,
     borderWidth: 10,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
   },
   rectangle11: {
     position: 'absolute',
@@ -823,7 +823,7 @@ const styles = StyleSheet.create({
     right: '100%',
     top: '12%',
     bottom: '6%',
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
   },
   rectangle13: {
     position: 'absolute',
@@ -831,7 +831,7 @@ const styles = StyleSheet.create({
     top: '12%',
     bottom: '6%',
     width: '6%',
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
   },
   centerLine: {
     position: 'absolute',
@@ -839,7 +839,7 @@ const styles = StyleSheet.create({
     left: 15 * scaleX,
     right: 15 * scaleX,
     height: 8 * scaleY,
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     marginTop: -4 * scaleY,
   },
   centerCircle: {
@@ -848,7 +848,7 @@ const styles = StyleSheet.create({
     left: '50%',
     width: 18 * scaleX,
     height: 18 * scaleY,
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     borderRadius: 9 * scaleX,
     marginTop: -9 * scaleY,
     marginLeft: -9 * scaleX,
@@ -859,7 +859,7 @@ const styles = StyleSheet.create({
     left: '50%',
     width: 87 * scaleX,
     height: 43.5 * scaleY,
-    borderColor: '#2379E4',
+    borderColor: '#0b191e',
     borderWidth: 7 * scaleX,
     borderBottomLeftRadius: 87 * scaleY,
     borderBottomRightRadius: 87 * scaleY,
@@ -870,9 +870,9 @@ const styles = StyleSheet.create({
     top: 90 * scaleY, // Adjust based on topGoal height
     width: '100%',
     height: 1 * scaleY, // Thin line
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     borderWidth: 5,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
   },
   bottomGoal: {
     position: 'absolute',
@@ -880,7 +880,7 @@ const styles = StyleSheet.create({
     left: '50%',
     width: 87 * scaleX,
     height: 43.5 * scaleY,
-    borderColor: '#2379E4',
+    borderColor: '#0b191e',
     borderWidth: 7 * scaleX,
     borderTopLeftRadius: 87 * scaleY,
     borderTopRightRadius: 87 * scaleY,
@@ -890,9 +890,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 90 * scaleY, // Adjust based on bottomGoal height
     width: '100%',
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     borderWidth: 5,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
   },
   centerGoalGroup: {
     position: 'absolute',
@@ -905,9 +905,9 @@ const styles = StyleSheet.create({
   centerGoalLine: {
     position: 'absolute',
     top: 34 * scaleY,
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     borderWidth: 5,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
     width: '100%',
   },
   centerGoalTop: {
@@ -916,7 +916,7 @@ const styles = StyleSheet.create({
     left: '37%',
     width: 76 * scaleX,
     height: 38 * scaleY,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
     borderWidth: 7 * scaleX,
     borderTopLeftRadius: 76 * scaleY,
     borderTopRightRadius: 76 * scaleY,
@@ -927,7 +927,7 @@ const styles = StyleSheet.create({
     left: '37%',
     width: 76 * scaleX,
     height: 38 * scaleY,
-    borderColor: '#2375DC',
+    borderColor: '#0b191e',
     borderWidth: 7 * scaleX,
     borderBottomLeftRadius: 76 * scaleY,
     borderBottomRightRadius: 76 * scaleY,
@@ -939,7 +939,7 @@ const styles = StyleSheet.create({
     left: '50%',
     width: 18 * scaleX,
     height: 18 * scaleY,
-    backgroundColor: '#2375DC',
+    backgroundColor: '#0b191e',
     borderRadius: 9 * scaleX,
     marginTop: -9 * scaleY,
     marginLeft: -9 * scaleX,
@@ -974,7 +974,7 @@ const styles = StyleSheet.create({
     borderRadius: 1000,
     marginLeft: '-10%',
     borderWidth: 1,
-    borderColor: '#FF0000', // Red border for goal zone
+    borderColor: '#14faab', // Cyan border for goal zone
     opacity: 0.1,
   },
   bottomGoalZone: {
@@ -987,7 +987,7 @@ const styles = StyleSheet.create({
     borderRadius: 1000,
     marginLeft: '-10%',
     borderWidth: 1,
-    borderColor: '#FF0000', // Red border for goal zone
+    borderColor: '#14faab', // Cyan border for goal zone
     opacity: 0.1,
   },
   goalIndicator: {
@@ -995,7 +995,7 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#FF3131', // Red color for goal indicator
+    backgroundColor: '#14faab', // Cyan color for goal indicator
     opacity: 0.8,
   },
   topGoalIndicator: {
@@ -1012,7 +1012,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 50 * scaleX, // Reduced from 59 * scaleX
     height: 42 * scaleY, // Reduced from 59 * scaleY
-    backgroundColor: '#318CFF',
+    backgroundColor: '#14faab',
     borderRadius: 25 * scaleX, // Reduced from 29.5 * scaleX
     shadowColor: '#000000',
     shadowOffset: { width: 0, height: 0 },
@@ -1025,7 +1025,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 50 * scaleX, // Reduced from 59 * scaleX
     height: 42 * scaleY, // Reduced from 59 * scaleY
-    backgroundColor: '#FF3131',
+    backgroundColor: '#0b191e',
     borderRadius: 25 * scaleX, // Reduced from 29.5 * scaleX
     shadowColor: '#000000',
     shadowOffset: { width: 0, height: 0 },
@@ -1053,7 +1053,7 @@ const styles = StyleSheet.create({
     left: 130 * scaleX,
     width: 95 * scaleX,
     height: 35 * scaleY,
-    backgroundColor: '#4692F0',
+    backgroundColor: '#14faab',
     borderRadius: 6 * scaleX,
     justifyContent: 'center',
     alignItems: 'center',
@@ -1061,7 +1061,7 @@ const styles = StyleSheet.create({
   scoreText: {
     fontSize: 22 * Math.min(scaleX, scaleY),
     fontWeight: '600',
-    color: '#FFFFFF',
+    color: '#0b191e',
     textAlign: 'center',
   },
   playerLabelLeft: {
@@ -1122,7 +1122,7 @@ const styles = StyleSheet.create({
   pauseModal: {
     width: 260 * scaleX,
     padding: 20 * scaleX,
-    backgroundColor: '#0F407E',
+    backgroundColor: '#0b191e',
     borderRadius: 8 * scaleX,
     gap: 16 * scaleY,
   },
@@ -1130,7 +1130,7 @@ const styles = StyleSheet.create({
     width: 280 * scaleX,
     paddingVertical: 24 * scaleY,
     paddingHorizontal: 20 * scaleX,
-    backgroundColor: '#0F407E',
+    backgroundColor: '#0b191e',
     borderRadius: 10 * scaleX,
     gap: 14 * scaleY,
     alignItems: 'center',
@@ -1151,14 +1151,14 @@ const styles = StyleSheet.create({
   },
   modalButton: {
     height: 46 * scaleY,
-    backgroundColor: '#F94444',
+    backgroundColor: '#14faab',
     borderRadius: 2 * scaleX,
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
   },
   modalButtonText: {
-    color: '#FFFFFF',
+    color: '#0b191e',
     fontSize: 14 * Math.min(scaleX, scaleY),
     fontWeight: 'bold',
     textTransform: 'uppercase',
@@ -1177,7 +1177,7 @@ const styles = StyleSheet.create({
     marginBottom: 20 * scaleX,
   },
   playAgainButton: {
-    backgroundColor: '#4692F0',
+    backgroundColor: '#14faab',
     paddingVertical: 10 * scaleX,
     paddingHorizontal: 20 * scaleX,
     borderRadius: 5 * scaleX,
