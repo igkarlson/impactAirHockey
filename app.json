@@ -4,7 +4,7 @@
     "slug": "speedy-air-hockey",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/sp.png",
     "scheme": "speedyairhockey",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,10 +13,11 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "backgroundColor": "#0b191e",
+          "enableFullScreenImage_legacy": true,
+          "image": "./assets/images/sp.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "contain"
         }
       ],
       "expo-localization"
