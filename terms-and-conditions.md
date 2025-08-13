@@ -1,29 +1,182 @@
-**Terms & Conditions**  
+# Terms and Conditions
 
-These terms and conditions apply to the Speedy Air Hockey app (hereby referred to as "Application") for mobile devices that was created by Igor Karlson (hereby referred to as "Service Provider") as a Free service.
+**Last Updated:** January 1, 2026
 
-Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.
+## Introduction
 
-The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.
+These Terms and Conditions ("Terms") govern your use of the Speedy Air Hockey mobile application ("Application" or "App") created by Igor Karlson ("Service Provider," "we," "our," or "us"). By downloading, installing, or using the Application, you agree to be bound by these Terms.
 
-The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone's security features, and may result in the Application not functioning correctly or at all.
+If you do not agree to these Terms, do not use the Application.
 
-Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Application require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance.
+## Acceptance of Terms
 
-If you are using the application outside of a Wi-Fi area, please be aware that your mobile network provider's agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the application, you accept responsibility for any such charges, including roaming data charges if you use the application outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer.
+By accessing or using the Application, you confirm that you accept these Terms and agree to comply with them. If you are using the Application on behalf of a company or other legal entity, you represent that you have the authority to bind such entity to these Terms.
 
-Similarly, the Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.
+## Description of Service
 
-In terms of the Service Provider's responsibility for your use of the application, it is important to note that while they strive to ensure that it is updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application.
+Speedy Air Hockey is a free mobile game application that provides an air hockey gaming experience. The Application is provided "AS IS" and "AS AVAILABLE" without any warranties of any kind.
 
-The Service Provider may wish to update the application at some point. The application is currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the application to) may change, and you will need to download the updates if you want to continue using the application. The Service Provider does not guarantee that it will always update the application so that it is relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the application when offered to you. The Service Provider may also wish to cease providing the application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device.
+## User Eligibility
 
-**Changes to These Terms and Conditions**
+You must be at least 13 years old to use the Application. If you are between 13 and 18 years old, you must have parental or guardian consent to use the Application. By using the Application, you represent and warrant that you meet these age requirements.
 
-The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.
+## License and Intellectual Property
 
-These terms and conditions are effective as of 2026-01-01
+### Grant of License
 
-**Contact Us**
+Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Application on your personal mobile device for personal, non-commercial purposes.
 
-If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at terms-and-conditions@speedy-air-hockey.online.
+### Intellectual Property Rights
+
+The Application and its original content, features, and functionality are and will remain the exclusive property of the Service Provider and its licensors. The Application is protected by copyright, trademark, and other laws. Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent.
+
+### Restrictions
+
+You agree not to:
+
+- Copy, modify, or create derivative works of the Application
+- Reverse engineer, decompile, or disassemble the Application
+- Remove, alter, or obscure any copyright, trademark, or other proprietary rights notices
+- Use the Application for any commercial purpose
+- Attempt to gain unauthorized access to the Application or its systems
+- Interfere with or disrupt the Application's functionality
+
+## User Conduct
+
+You agree to use the Application only for lawful purposes and in accordance with these Terms. You agree not to:
+
+- Use the Application in any way that violates any applicable federal, state, local, or international law or regulation
+- Transmit any material that is defamatory, offensive, or otherwise objectionable
+- Impersonate or attempt to impersonate the Service Provider or any other person or entity
+- Engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Application
+
+## Privacy and Data
+
+Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the Application, to understand our practices regarding the collection and use of your information.
+
+## Device Requirements and Security
+
+### Device Requirements
+
+The Application requires a compatible mobile device with sufficient storage space and processing power. We do not guarantee that the Application will be compatible with all devices or operating system versions.
+
+### Security Responsibilities
+
+You are responsible for:
+
+- Maintaining the security of your device and access to the Application
+- Keeping your device's operating system updated
+- Using appropriate security measures to protect your device
+
+### Jailbreaking/Rooting
+
+We strongly advise against jailbreaking or rooting your device, as this may:
+
+- Compromise your device's security
+- Cause the Application to malfunction
+- Void your device's warranty
+- Expose your device to malware and security vulnerabilities
+
+## Internet and Data Usage
+
+### Internet Connection
+
+Some features of the Application may require an active internet connection. You are responsible for:
+
+- Obtaining and maintaining internet connectivity
+- Paying any charges from your mobile carrier for data usage
+- Ensuring you have sufficient data allowance
+
+### Data Charges
+
+By using the Application, you acknowledge that:
+
+- You may incur data charges from your mobile carrier
+- We are not responsible for any charges related to your use of the Application
+- You should review your mobile carrier's terms regarding data usage and roaming charges
+
+## Disclaimers and Limitations
+
+### Disclaimer of Warranties
+
+THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+### Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE PROVIDER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR USE, INCURRED BY YOU OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+### Maximum Liability
+
+IN NO EVENT SHALL THE SERVICE PROVIDER'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR ACCESSING THE APPLICATION.
+
+## Updates and Modifications
+
+### Application Updates
+
+We may update the Application from time to time to:
+
+- Improve functionality and performance
+- Fix bugs and security issues
+- Add new features
+- Ensure compatibility with new operating system versions
+
+You agree to accept updates to the Application when offered. We do not guarantee that the Application will be updated to maintain compatibility with your specific device or operating system version.
+
+### Terms Updates
+
+We reserve the right to modify these Terms at any time. We will notify users of material changes by:
+
+- Updating the "Last Updated" date
+- Posting the updated Terms in the Application
+- Providing notice through the Application or app stores
+
+Your continued use of the Application after any changes constitutes acceptance of the updated Terms.
+
+## Termination
+
+### Termination by You
+
+You may stop using the Application at any time by uninstalling it from your device.
+
+### Termination by Us
+
+We may terminate or suspend your access to the Application immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.
+
+### Effect of Termination
+
+Upon termination:
+
+- Your right to use the Application will cease immediately
+- You must delete the Application from your device
+- All provisions of these Terms which by their nature should survive termination shall survive
+
+## Governing Law and Dispute Resolution
+
+### Governing Law
+
+These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the Service Provider operates, without regard to its conflict of law provisions.
+
+### Dispute Resolution
+
+Any disputes arising from these Terms or your use of the Application shall be resolved through binding arbitration or in the courts of the Service Provider's jurisdiction, as applicable.
+
+## Severability
+
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law, and the remaining provisions will continue in full force and effect.
+
+## Entire Agreement
+
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and the Service Provider regarding the use of the Application.
+
+## Contact Information
+
+If you have any questions about these Terms and Conditions, please contact us at:
+
+**Email:** terms@speedy-air-hockey.online  
+**Subject Line:** Terms and Conditions Inquiry
+
+We will respond to your inquiry within a reasonable timeframe.
+
+---
+
+_These Terms and Conditions are effective as of January 1, 2026._

@@ -1,43 +1,96 @@
-**Privacy Policy**
+# Privacy Policy
 
-This privacy policy applies to the Speedy Air Hockey app (hereby referred to as "Application") for mobile devices that was created by Igor Karlson (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
+**Last Updated:** January 1, 2026
 
-**What information does the Application obtain and how is it used?**
+## Introduction
 
-The Application does not obtain any information when you download and use it. Registration is not required to use the Application.
+This Privacy Policy ("Policy") describes how Speedy Air Hockey ("we," "our," or "us"), operated by Igor Karlson ("Service Provider"), collects, uses, and protects your information when you use our mobile application ("Application" or "App").
 
-**Does the Application collect precise real time location information of the device?**
+By downloading, installing, or using the Application, you agree to the collection and use of information in accordance with this Policy.
 
-This Application does not collect precise information about the location of your mobile device.
+## Information We Collect
 
-**Do third parties see and/or have access to information obtained by the Application?**
+### Personal Information
 
-Since the Application does not collect any information, no data is shared with third parties.
+The Application is designed with privacy in mind and **does not collect, store, or transmit any personal information** from users. This includes but is not limited to:
 
-**What are my opt-out rights?**
+- Name, email address, or contact information
+- Device identifiers or unique user IDs
+- Location data
+- Usage analytics or behavioral data
+- Payment information (the app is free)
 
-You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+### Technical Information
 
-**Children**
+While we do not collect personal data, your device may automatically provide certain technical information to app stores (Apple App Store, Google Play Store) when you download or update the Application. This information is governed by the respective app store's privacy policy, not this Policy.
 
-The Application is not used to knowingly solicit data from or market to children under the age of 13.
+## How We Use Information
 
-The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (support@speedy-air-hockey.online) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
+Since we do not collect personal information, there is no personal data to use, process, or share.
 
-**Security**
+## Information Sharing and Disclosure
 
-The Service Provider is concerned about safeguarding the confidentiality of your information. However, since the Application does not collect any information, there is no risk of your data being accessed by unauthorized individuals.
+We do not share, sell, rent, or trade any personal information because we do not collect any personal information.
 
-**Changes**
+## Data Security
 
-This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to their Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+While we do not collect personal data, we are committed to maintaining the security of our Application. The Application operates entirely on your device without transmitting data to external servers.
 
-This privacy policy is effective as of 2026-01-01
+## Children's Privacy
 
-**Your Consent**
+Our Application is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
 
-By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by the Service Provider.
+For users between 13 and 16 years of age, parental consent may be required depending on your jurisdiction. We encourage parents and guardians to monitor their children's use of our Application.
 
-**Contact Us**
+## Third-Party Services
 
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at privacy-policy@speedy-air-hockey.online.
+The Application may contain links to third-party services or integrate with third-party platforms (such as app stores). This Privacy Policy does not apply to those third-party services. We encourage you to review the privacy policies of any third-party services you access.
+
+## International Data Transfers
+
+Since we do not collect personal data, no international data transfers occur.
+
+## Your Rights and Choices
+
+### Opt-Out Rights
+
+You can stop using the Application at any time by uninstalling it from your device. Since we do not collect personal data, there is no additional data collection to opt out of.
+
+### Data Subject Rights
+
+If you believe we have collected your personal information (which we do not), you may have the right to:
+
+- Access your personal data
+- Correct inaccurate data
+- Request deletion of your data
+- Object to processing
+- Data portability
+
+To exercise these rights, please contact us using the information provided below.
+
+## Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. We will notify users of any material changes by:
+
+- Updating the "Last Updated" date at the top of this Policy
+- Posting the updated Policy in the Application
+- Notifying users through the Application or app store updates
+
+Your continued use of the Application after any changes constitutes acceptance of the updated Policy.
+
+## Contact Information
+
+If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
+
+**Email:** privacy@speedy-air-hockey.online  
+**Subject Line:** Privacy Policy Inquiry
+
+We will respond to your inquiry within a reasonable timeframe.
+
+## Governing Law
+
+This Privacy Policy is governed by and construed in accordance with applicable privacy laws and regulations. If any provision of this Policy is found to be unenforceable, the remaining provisions will continue in full force and effect.
+
+---
+
+_This Privacy Policy is effective as of January 1, 2026._
