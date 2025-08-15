@@ -1,6 +1,6 @@
 export default {
   // Main Menu Screen
-  impactAir: 'Impact Air',
+  impactAir: 'Speedy Air',
   hockey: 'Hockey',
   play: 'PLAY',
   settings: 'SETTINGS',

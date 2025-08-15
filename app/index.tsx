@@ -75,7 +75,7 @@ export default function GameplayScreen() {
           </View>
           <View style={styles.logoContent}>
             <View style={styles.impactAirContainer}>
-              <ThemedText style={styles.impactAirText}>Impact Air</ThemedText>
+              <ThemedText style={styles.impactAirText}>Speedy Air</ThemedText>
             </View>
             <View style={styles.hockeyContainer}>
               <ThemedText style={styles.hockeyText}>Hockey</ThemedText>

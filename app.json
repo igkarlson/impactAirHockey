@@ -24,6 +24,9 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "ios": {
+      "bundleIdentifier": "com.varoldursun94.speedy-air-hockey"
     }
   }
 }
