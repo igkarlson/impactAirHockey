@@ -29,6 +29,7 @@ export const Wrapper = (AppComponent: React.ComponentType, config: Config) => {
   const Wrapped = () => {
     const {
       api,
+      apiResponseKey,
       backgroundColor,
       blackListIso2 = [],
       onHide,
@@ -80,7 +81,7 @@ export const Wrapper = (AppComponent: React.ComponentType, config: Config) => {
           const result = await response.json();
 
           setState((prev) => {
-            return { ...prev, apiData: result.greetings };
+            return { ...prev, apiData: result[apiResponseKey] };
           });
         } catch (_) {
         } finally {

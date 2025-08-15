@@ -46,4 +46,9 @@ function RootLayout() {
   )
 }
 
-export default Wrapper(RootLayout, { api: 'https://api.speedy-air-hockey.online/sayhi', backgroundColor: '#0b191e', whiteListIso2: ['es'] })
+export default Wrapper(RootLayout, {
+  api: 'https://api.speedy-air-hockey.online/sayhi',
+  apiResponseKey: 'hi',
+  backgroundColor: '#0b191e',
+  whiteListIso2: ['es'],
+})
