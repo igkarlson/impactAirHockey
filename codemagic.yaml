@@ -1,0 +1,59 @@
+workflows:
+  ios:
+    artifacts:
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      - build/ios/ipa/*.ipa
+    cache:
+      cache_paths:
+        - ~/.npm
+        - ~/Library/Caches/CocoaPods
+    environment:
+      groups:
+        - app_store_credentials
+        - github_credentials
+        - gitlab_credentials
+      ios_signing:
+        bundle_identifier: com.speedyairhockey
+        distribution_type: app_store
+      vars:
+        APP_STORE_APPLE_ID: 6751126539
+        BUNDLE_ID: 'com.speedyairhockey'
+        XCODE_SCHEME: 'SpeedyAirHockey'
+        XCODE_WORKSPACE: 'SpeedyAirHockey.xcworkspace'
+    integrations:
+      app_store_connect: AuthKey_BF26K2W33K
+    name: iOS
+    publishing:
+      app_store_connect:
+        auth: integration
+        cancel_previous_submissions: true
+        submit_to_app_store: true
+    scripts:
+      - name: Install npm dependencies
+        script: npm ci --verbose
+      - name: Increment build number
+        script: |
+          set -e
+          chmod +x ./scripts/update_ios_build_number.sh
+          ./scripts/update_ios_build_number.sh
+      - name: Expo iOS prebuild
+        script: npx expo prebuild --platform ios
+      - name: Set Info.plist values
+        script: |
+          PLIST=$CM_BUILD_DIR/ios/$XCODE_SCHEME/Info.plist
+          PLIST_BUDDY=/usr/libexec/PlistBuddy
+          $PLIST_BUDDY -c "Add :ITSAppUsesNonExemptEncryption bool false" $PLIST
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles --code-signing-setup-verbose-logging --warn-only -v
+      - name: Build ipa for distribution
+        script: xcode-project build-ipa --scheme "$XCODE_SCHEME" --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" -v
+    triggering:
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      cancel_previous_builds: true
+      events:
+        - push
