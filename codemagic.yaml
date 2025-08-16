@@ -23,7 +23,7 @@ workflows:
         XCODE_SCHEME: 'SpeedyAirHockey'
         XCODE_WORKSPACE: 'SpeedyAirHockey.xcworkspace'
     integrations:
-      app_store_connect: AuthKey_BF26K2W33K
+      app_store_connect: AuthKey_WTD5M2963K.p8
     name: iOS
     publishing:
       app_store_connect:
