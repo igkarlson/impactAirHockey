@@ -4,7 +4,7 @@
 
 ## Introduction
 
-These Terms and Conditions ("Terms") govern your use of the Speedy Air Hockey mobile application ("Application" or "App") created by Igor Karlson ("Service Provider," "we," "our," or "us"). By downloading, installing, or using the Application, you agree to be bound by these Terms.
+These Terms and Conditions ("Terms") govern your use of the Speedy Air Hockey mobile application ("Application" or "App") created by Joanna Kowalczyk ("Service Provider," "we," "our," or "us"). By downloading, installing, or using the Application, you agree to be bound by these Terms.
 
 If you do not agree to these Terms, do not use the Application.
 

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This Privacy Policy ("Policy") describes how Speedy Air Hockey ("we," "our," or "us"), operated by Igor Karlson ("Service Provider"), collects, uses, and protects your information when you use our mobile application ("Application" or "App").
+This Privacy Policy ("Policy") describes how Speedy Air Hockey ("we," "our," or "us"), operated by Joanna Kowalczyk ("Service Provider"), collects, uses, and protects your information when you use our mobile application ("Application" or "App").
 
 By downloading, installing, or using the Application, you agree to the collection and use of information in accordance with this Policy.
 

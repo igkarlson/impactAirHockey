@@ -129,7 +129,7 @@ The color scheme is defined in CSS variables in `styles.css`:
 
 ## License
 
-This landing page is part of the Speedy Air Hockey project. All rights reserved by Igor Karlson.
+This landing page is part of the Speedy Air Hockey project. All rights reserved by Joanna Kowalczyk.
 
 ## Support
 
