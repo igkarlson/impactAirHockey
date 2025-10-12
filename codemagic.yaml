@@ -17,7 +17,7 @@ workflows:
         - gitlab_credentials
         - google_credentials
       android_signing:
-        keystore_reference: android_keystore
+        - keystore_reference
       vars:
         PACKAGE_NAME: 'com.speedyairhockey'
     scripts:
