@@ -18,6 +18,10 @@ workflows:
         - codemagic
       vars:
         PACKAGE_NAME: 'com.speedyairhockey'
+        MYAPP_UPLOAD_STORE_FILE: 'codemagic.keystore'
+        MYAPP_UPLOAD_STORE_PASSWORD: $CM_KEYSTORE_PASSWORD
+        MYAPP_UPLOAD_KEY_ALIAS: $CM_KEY_ALIAS
+        MYAPP_UPLOAD_KEY_PASSWORD: $CM_KEY_PASSWORD
     scripts:
       - name: Install npm dependencies
         script: npm ci --verbose
@@ -26,6 +30,9 @@ workflows:
       - name: Set Android SDK location
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
+      - name: Copy keystore to android directory
+        script: |
+          cp codemagic.keystore android/app/
       - name: Build Android APK
         script: |
           cd android
