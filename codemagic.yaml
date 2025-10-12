@@ -13,8 +13,6 @@ workflows:
         - ~/.android/build-cache
     environment:
       groups:
-        - github_credentials
-        - gitlab_credentials
         - google_credentials
       android_signing:
         - codemagic
