@@ -1,4 +1,54 @@
 workflows:
+  android:
+    artifacts:
+      - build/app/outputs/**/*.apk
+      - build/app/outputs/**/*.aab
+      - build/app/outputs/**/mapping.txt
+      - android/app/build/outputs/**/*.apk
+      - android/app/build/outputs/**/*.aab
+    cache:
+      cache_paths:
+        - ~/.npm
+        - ~/.gradle/caches
+        - ~/.android/build-cache
+    environment:
+      groups:
+        - github_credentials
+        - gitlab_credentials
+        - google_credentials
+      android_signing:
+        keystore_reference: android_keystore
+      vars:
+        PACKAGE_NAME: 'com.speedyairhockey'
+    scripts:
+      - name: Install npm dependencies
+        script: npm ci --verbose
+      - name: Set up Android SDK
+        script: |
+          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+      - name: Expo Android prebuild
+        script: npx expo prebuild --platform android
+      - name: Build Android APK
+        script: |
+          cd android
+          ./gradlew assembleRelease
+      - name: Build Android App Bundle
+        script: |
+          cd android
+          ./gradlew bundleRelease
+    publishing:
+      google_play:
+        credentials: $GOOGLE_PLAY_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal
+        submit_as_draft: true
+    triggering:
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      cancel_previous_builds: true
+      events:
+        - push
   ios:
     artifacts:
       - /tmp/xcodebuild_logs/*.log
