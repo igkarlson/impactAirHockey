@@ -21,11 +21,10 @@ workflows:
     scripts:
       - name: Install npm dependencies
         script: npm ci --verbose
-      - name: Set up Android SDK
-        script: |
-          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"  
       - name: Expo Android prebuild
         script: npx expo prebuild --platform android
+      - name: Set up app/build.gradle
+        script: mv ./support-files/build.gradle android/app
       - name: Build Android APK
         script: |
           cd android
