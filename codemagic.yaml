@@ -23,7 +23,7 @@ workflows:
         script: npm ci --verbose
       - name: Set up Android SDK
         script: |
-          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"  
       - name: Expo Android prebuild
         script: npx expo prebuild --platform android
       - name: Build Android APK
