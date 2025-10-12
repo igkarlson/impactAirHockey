@@ -27,6 +27,9 @@
     },
     "ios": {
       "bundleIdentifier": "com.speedyairhockey"
+    },
+    "android": {
+      "package": "com.speedyairhockey"
     }
   }
 }
