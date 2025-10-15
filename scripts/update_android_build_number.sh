@@ -102,20 +102,43 @@ LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(google-play get-latest-build-number --package-
 
 log "Latest Google Play build number: $LATEST_GOOGLE_PLAY_BUILD_NUMBER"
 
+# Also check all tracks to get the highest build number
+log "Checking all Google Play tracks for highest build number..."
+ALL_TRACKS_BUILD_NUMBER=$(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="internal,alpha,beta,production" || echo "0")
+log "Latest build number across all tracks: $ALL_TRACKS_BUILD_NUMBER"
+
 # Determine highest build number
 HIGHEST_BUILD_NUMBER=$CURRENT_BUILD_NUMBER
 
-if [[ -n "$LATEST_GOOGLE_PLAY_BUILD_NUMBER" ]] && [[ "$LATEST_GOOGLE_PLAY_BUILD_NUMBER" =~ ^[0-9]+$ ]]; then
-    if [[ "$LATEST_GOOGLE_PLAY_BUILD_NUMBER" -gt "$HIGHEST_BUILD_NUMBER" ]]; then
-        HIGHEST_BUILD_NUMBER=$LATEST_GOOGLE_PLAY_BUILD_NUMBER
+# Check both single track and all tracks build numbers
+for build_number in "$LATEST_GOOGLE_PLAY_BUILD_NUMBER" "$ALL_TRACKS_BUILD_NUMBER"; do
+    if [[ -n "$build_number" ]] && [[ "$build_number" =~ ^[0-9]+$ ]]; then
+        if [[ "$build_number" -gt "$HIGHEST_BUILD_NUMBER" ]]; then
+            HIGHEST_BUILD_NUMBER=$build_number
+        fi
     fi
-fi
+done
 
 log "Highest build number is $HIGHEST_BUILD_NUMBER."
 
 # Calculate and update new build number
 NEW_BUILD_NUMBER=$((HIGHEST_BUILD_NUMBER + 1))
+
+# If we still get 1 and Google Play says it's already used, use Codemagic's BUILD_NUMBER as fallback
+if [[ "$NEW_BUILD_NUMBER" -eq 1 ]] && [[ "$HIGHEST_BUILD_NUMBER" -eq 0 ]]; then
+    if [[ -n "$BUILD_NUMBER" ]] && [[ "$BUILD_NUMBER" =~ ^[0-9]+$ ]]; then
+        log "Using Codemagic BUILD_NUMBER as fallback: $BUILD_NUMBER"
+        NEW_BUILD_NUMBER=$BUILD_NUMBER
+    fi
+fi
+
 log "New Android build number will be $NEW_BUILD_NUMBER."
+
+# Additional debugging
+log "Environment variables:"
+log "PACKAGE_NAME: $PACKAGE_NAME"
+log "CM_BRANCH: $CM_BRANCH"
+log "BUILD_NUMBER: $BUILD_NUMBER"
 
 # Update app.json
 log "Updating Android build number in app.json..."
@@ -131,6 +154,8 @@ if ! mv "$tmp_app_json" app.json; then
 fi
 
 log "Android build number updated in app.json."
+log "Verifying update - current app.json content:"
+cat app.json | jq '.expo.android'
 
 # Handle git operations
 handle_git_operations "$NEW_BUILD_NUMBER"
