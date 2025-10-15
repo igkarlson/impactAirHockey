@@ -21,6 +21,11 @@ workflows:
     scripts:
       - name: Install npm dependencies
         script: npm ci --verbose
+      - name: Increment build number
+        script: |
+          set -e
+          chmod +x ./scripts/update_android_build_number.sh
+          ./scripts/update_android_build_number.sh
       - name: Expo Android prebuild
         script: npm run android-prebuild
       - name: Set Android SDK location
@@ -72,7 +77,10 @@ workflows:
       - name: Build Android App Bundle
         script: |
           cd android
-          ./gradlew bundleRelease
+          # Get the updated build number from app.json
+          VERSION_CODE=$(jq -r '.expo.android.versionCode // "1"' ../app.json)
+          VERSION_NAME=$(jq -r '.expo.version // "1.0.0"' ../app.json)
+          ./gradlew bundleRelease -PversionCode=$VERSION_CODE -PversionName=$VERSION_NAME
     publishing:
       google_play:
         credentials: $GOOGLE_PLAY_SERVICE_ACCOUNT_CREDENTIALS
