@@ -22,7 +22,7 @@ workflows:
       - name: Install npm dependencies
         script: npm ci --verbose
       - name: Expo Android prebuild
-        script: npx expo prebuild --platform android
+        script: npm run android-prebuild
       - name: Set Android SDK location
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
@@ -69,10 +69,6 @@ workflows:
               }
           }
           EOF
-      - name: Build Android APK
-        script: |
-          cd android
-          ./gradlew assembleRelease
       - name: Build Android App Bundle
         script: |
           cd android
@@ -130,7 +126,7 @@ workflows:
           chmod +x ./scripts/update_ios_build_number.sh
           ./scripts/update_ios_build_number.sh
       - name: Expo iOS prebuild
-        script: npx expo prebuild --platform ios
+        script: npm run ios-prebuild
       - name: Set Info.plist values
         script: |
           PLIST=$CM_BUILD_DIR/ios/$XCODE_SCHEME/Info.plist

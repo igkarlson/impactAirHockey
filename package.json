@@ -4,14 +4,15 @@
   "version": "1.0.0",
   "scripts": {
     "android-development": "DEBUG=expo:* npx expo run:android --variant debug",
+    "android-prebuild": "DEBUG=expo:* npx expo prebuild --platform android",
     "android-production": "DEBUG=expo:* npx expo run:android --variant release",
     "android": "expo run:android",
     "format": "prettier . --log-level debug --write",
     "ios-development": "DEBUG=expo:* npx expo run:ios --configuration Debug",
+    "ios-prebuild": "DEBUG=expo:* npx expo prebuild --platform ios",
     "ios-production": "DEBUG=expo:* npx expo run:ios --configuration Release",
     "ios": "expo run:ios",
     "lint": "DEBUG=expo:* npx expo lint --fix",
-    "prebuild": "DEBUG=expo:* npx expo prebuild --platform ios",
     "start": "DEBUG=expo:* npx expo start",
     "update": "npx npm-check-updates -u --verbose"
   },
